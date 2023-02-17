@@ -11,6 +11,10 @@ namespace Api.Data
         }
         public DbSet<Category> categories { get; set; }
         public DbSet<Book> Books { get; set; }
+        public DbSet<Author> Authors { get; set; }
+        public DbSet<User> Users { get; set; }
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Category>().HasData(
